@@ -15,12 +15,11 @@ namespace Projet
             Console.BufferHeight = 78;
             Console.SetWindowSize(60,20);
             //Console.SetWindowPosition(0, 0);
-            Console.SetCursorPosition(28,76);
+            //Console.SetCursorPosition(28,76);
 
-            string path = "C:\\Users\\rcmd\\source\\repos\\projetfilrouge\\map.txt";
             string line;
 
-            StreamReader stream = new StreamReader(path);
+            StreamReader stream = new StreamReader(@"..\..\map.txt");
             while ((line = stream.ReadLine()) != null)
             {
                 foreach (char caractere in line)
